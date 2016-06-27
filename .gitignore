@@ -6,3 +6,8 @@ node_modules/
 public/
 .deploy*/
 *.idea
+.gitignore
+.idea/
+assets/
+index.html
+src/

@@ -18,10 +18,24 @@
 <body>
 <div id="button" class="button">button</div>
 <div id="button1" class="button">button</div>
+<div id="button2" class="button">button</div>
 <script type='text/javascript'>
-    $('#button1').button('set text', 'button', 'oooo');
-    $('#button1').button({
-        text: 'xxx'
+    $('#button1')
+            .button('set text', 'button', 'oooo')
+            .button('set text', 'buttonsssssssssss');
+    $('#button1')
+            .button({
+                text: 'xxx'
+            })
+            .button('set settings', {text: 'yyyyyyyyyy'});
+
+    $('#button2')
+            .button({
+                text: 'xxx'
+            })
+            .button('set settings', {text: 'yyyyyyyyyy'});
+    $('#button2').button('get settings',function(x){
+        console.log(x);
     });
 </script>
 </body>
