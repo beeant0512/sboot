@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>SBoot</title>
-    <link rel="stylesheet" href="./src/sboot.css">
+    <!--<link rel="stylesheet" href="./src/sboot.css">-->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
     <script src="./assets/jquery/jquery.js" charset="utf-8"></script>
     <script src="./src/sboot.js" charset="utf-8"></script>
     <script src="./src/sboot.button.js" charset="utf-8"></script>
@@ -16,9 +17,9 @@
 </head>
 
 <body>
-<div id="button" class="button">button</div>
-<div id="button1" class="button">button</div>
-<div id="button2" class="button">button</div>
+<div id="button" class="btn btn-default">button</div>
+<div id="button1" class="btn btn-default">button</div>
+<div id="button2" class="btn btn-default">button</div>
 <script type='text/javascript'>
     /*$('#button1')
             .button('set text', 'button', 'oooo')
@@ -38,7 +39,13 @@
         console.log(x);
     });*/
 
-    $('#button2').button('extend', 'set text','xxxxxx')
+    $('#button2').button('extend', 'set text',function(x){
+        console.log(x);
+    });
+
+    $('.btn').button();
+
+
 </script>
 </body>
 
